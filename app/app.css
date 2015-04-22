@@ -1,10 +1,9 @@
 /* app css stylesheet */
-
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script);
 body{
     background-color: #192228;
     width:100%;
     height: 100%;
-    padding: 20px;
 }
 
 a{
@@ -15,6 +14,7 @@ a{
 }
 
 a:hover{
+    text-decoration: none;
     color: #564149;
     cursor: pointer;
     transition: color .5s ease; 
@@ -24,16 +24,20 @@ h1{
     color: #564149;
     font-family: "AR Christy";
     font-size: 50px;
-    
-    
 }
 
 h3{
     color: #c0a892;
     font-family: "AR Julian";
     font-size: 20px;
-    margin-top: -50px;  
+    margin-top: -20px;  
     margin-left: 25px;
+}
+
+p{
+    color: #50585B;
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
 }
 
 .left{
@@ -48,14 +52,47 @@ h3{
 .menu {
     list-style: none;
     float: right;
-    padding: 15px;
+    padding-left: 15px;
     z-index: 3;
     font-family: "AR Christy";
-    font-size: 50px;
+    font-size: 25px;
     color: #c0a892;
     margin-right: 75px;
     transition: color .5s ease;
 }
+.header{
+    margin-left: 25px;   
+}
+
+.headerBK{
+    width: 100%;
+    height: 35px;
+    background-color: #50585B;
+}
+
+.hLine{
+    height: 5px;
+    width: 100%;
+    background-color: #50585B;
+    margin-top: 10px;
+
+}
 
 
+/*animations!*/
+.fadeAnimate { 
+    opacity:0; 
+    transition:all 1000ms ease-in-out; 
+}
 
+.fadeAnimate.fade-in { 
+    opacity:1; 
+}
+
+.glowAnimate {
+    text-shadow: 0 0 3px #FFFFF0;
+    transition:all 3000ms ease-in-out; 
+}
+.glowAnimate.fade-in {
+    text-shadow: none;   
+}

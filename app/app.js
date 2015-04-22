@@ -8,54 +8,37 @@ myApp.config(function($routeProvider) {
         .when('/',{
         templateUrl: './views/home.html',
         controller: 'homeController'
-        })
-            .when('/about',{
+    })
+        .when('/about',{
         templateUrl: './views/about.html',
         controller: 'aboutController'
-        })
-            .when('/contact',{
+    })
+        .when('/contact',{
         templateUrl: './views/contact.html',
         controller: 'contactController'
-        })
-            .when('/work',{
+    })
+        .when('/work',{
         templateUrl: './views/work.html',
         controller: 'workController'
-        })
-        .when('/tim',{
-            templateUrl: './views/about.html',
-          controller: 'timController'
-        })
-    .when('/dani',{
-            templateUrl: './views/about.html',
-          controller: 'daniController'
-        })
+    })
         .when('/gh',{
-            templateUrl: './views/work.html',
-          controller: 'ghController'
-        })
-            .when('/dh',{
-            templateUrl: './views/work.html',
-          controller: 'dhController'
-        })
+        templateUrl: './views/grindhouse.html',
+        controller: 'ghController'
+    })
+        .when('/dh',{
+        templateUrl: './views/doghouse.html',
+        controller: 'dhController'
+    })
 })
 
-myApp.controller('homeController', function($scope){
-    $scope.greeting = 'Elephant!';
-})
-myApp.controller('daniController', function($scope){
-    $scope.name = 'dani!';
-    $scope.about = 'awesome elephant'
-})
-myApp.controller('timController', function($scope){
-    $scope.name = 'tim!';
-    $scope.about = 'awesome raccoon'
-})
-myApp.controller('ghController', function($scope){
-    $scope.work = 'grindhouse!';
-})
-myApp.controller('dhController', function($scope){
-    $scope.work = 'doghouse quilts!';
-})
-myApp.controller('workController', function($scope){
-    $scope.work = 'Click the links to view my work!';
-})
+myApp.controller('homeController', function($scope, $timeout){
+    $scope.fade = false;
+    $scope.toggle = function(){
+        $timeout(function(){
+            $scope.fade = !$scope.fade;
+        },1000);
+    }
+});
+
+
+
