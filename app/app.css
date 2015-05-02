@@ -13,7 +13,7 @@ a{
     transition: color .5s ease; 
 }
 
-a:hover{
+a:active, a:hover{
     text-decoration: none;
     color: #564149;
     cursor: pointer;
@@ -76,6 +76,40 @@ p{
     background-color: #50585B;
     margin-top: 10px;
 
+}
+
+.portEx {
+    display: inline-block;
+    height: 450px;
+    width: 675px;
+    position: relative;
+    box-shadow: -10px 0px 5px #000000;
+    margin-right: -405px;
+    margin-left: 2%;
+    transform: perspective( 1000px ) rotateY(45deg) scale(.7);
+    -webkit-transform:perspective( 1000px ) rotateY(45deg) scale(.7);
+    transition:all 400ms ease-in-out;
+
+}
+
+.portEx:hover{
+    -webkit-transform:perspective( 1000px ) rotateY(0deg) scale(1);
+    transform: perspective( 1000px ) rotateY(0deg) scale(1);
+    transition:all 300ms ease-in-out;
+    position: relative;
+    z-index: 5;
+    box-shadow: 0px 0px 10px #01262B;
+}
+
+.portEx img{
+    height:100%;
+    width: 100%;
+}
+
+.contact{
+    height: 250px; 
+    width: 500px;
+    margin:0 auto;
 }
 
 
