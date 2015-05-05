@@ -36,7 +36,7 @@ myApp.controller('homeController', function($scope, $timeout){
     $scope.toggle = function(){
         $timeout(function(){
             $scope.fade = !$scope.fade;
-        },1000);
+        },800);
     }
 });
 
