@@ -1,149 +1,193 @@
 /* app css stylesheet */
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script);
 @font-face{
- font-family: 'AR Christy';
+    font-family: 'AR Christy';
     src: url('/fonts/ARCHRISTY.ttf');/*IE 9 */
     src: url('/fonts/ARCHRISTY.ttf') format('embedded-opentype'), /* IE6-IE8 */
-       url('/fonts/ARCHRISTY.ttf') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/ARCHRISTY.ttf') format('woff'), /* Pretty Modern Browsers */
-       url('/fonts/ARCHRISTY.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('/fonts/ARCHRISTY.ttf') format('svg'); /* Legacy iOS */
-}
-body{
-    background-color: #192228;
-    width:100%;
-    height: 100%;
+        url('/fonts/ARCHRISTY.ttf') format('woff2'), /* Super Modern Browsers */
+        url('/fonts/ARCHRISTY.ttf') format('woff'), /* Pretty Modern Browsers */
+        url('/fonts/ARCHRISTY.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('/fonts/ARCHRISTY.ttf') format('svg'); /* Legacy iOS */
 }
 
-a, a:visited{
-    font-style: none;
-    text-decoration: none;
-    color: #c0a892;
-    transition: color .5s ease; 
-}
+    body{
+        background-color: #192228;
+        width:100%;
+        height: 100%;
+    }
 
-a:active, a:hover {
-    text-decoration: none;
-    color: #564149;
-    cursor: pointer;
-    transition: color .5s ease; 
-}
+    a, a:visited{
+        font-style: none;
+        text-decoration: none;
+        color: #c0a892;
+        transition: color .5s ease; 
+    }
 
-.contact{
-    height: 250px; 
-    width: 500px;
-    margin:0 auto;
-}
+    a:active, a:hover {
+        text-decoration: none;
+        color: #564149;
+        cursor: pointer;
+        transition: color .5s ease; 
+    }
 
-h1{
-    color: #564149;
-    font-family: "AR Christy";
-    font-size: 50px;
-}
+    .contact{
+        height: 250px; 
+        width: 500px;
+        margin:0 auto;
+    }
 
-h3{
-    color: #c0a892;
-    font-family: "AR Julian";
-    font-size: 20px;
-    margin-top: -20px;  
-    margin-left: 25px;
-}
+    h1{
+        color: #564149;
+        font-family: "AR Christy";
+        font-size: 50px;
+    }
 
-.header{
-    margin-left: 25px;   
-}
+    h3{
+        color: #c0a892;
+        font-family: "AR Julian";
+        font-size: 20px;
+        margin-top: -20px;  
+        margin-left: 25px;
+    }
 
-.headerBK{
-    width: 100%;
-    height: 35px;
-    background-color: #50585B;
-}
+    .header{
+        padding:0.8em;
 
-.hLine{
-    height: 5px;
-    width: 100%;
-    background-color: #50585B;
-    margin-top: 10px;
+    }
 
-}
+    .headerBK{
+        width: 100%;
+        height: 35px;
+        background-color: #50585B;
+    }
 
-.homeImgContainer{
-transition: all 500ms;
-}
+    .hLine{
+        height: 5px;
+        width: 100%;
+        background-color: #50585B;
+        margin-top: 10px;
 
-.homeImgContainer:hover {
-    transform: scale(1.1);
-    margin: 15px;
-    transition: all 500ms;
-     
-}
+    }
 
-.homeImgContainer img:hover{
-}
+    .homeImgContainer{
+        transition: all 500ms;
+    }
+
+    .homeImgContainer:hover {
+        transform: scale(1.1);
+        margin: 15px;
+        transition: all 500ms;
+
+    }
+
+    .homeImgContainer img:hover{
+    }
+
+
+    .left{
+        float: left;
+    }
+
+    .menu {
+        list-style: none;
+        float: right;
+        padding-left: 15px;
+        z-index: 3;
+        font-family: "AR Christy";
+        font-size: 25px;
+        color: #c0a892;
+        margin-right: 75px;
+        transition: color .5s ease;
+    }
+
+    p{
+        color: #50585B;
+        font-family: 'Dancing Script', cursive;
+        font-size: 35px;
+    }
+
+    #portExContainer{
+        width: 80%;
+        margin:0 auto;
+    }
+
+    .portEx {
+        display: inline-block;
+        height: 450px;
+        width: 675px;
+        position: relative;
+        -webkit-box-shadow: -2px 12px 50px 15px rgba(0,0,0,0.69);
+        -moz-box-shadow: -2px 12px 50px 15px rgba(0,0,0,0.69);
+        box-shadow: -2px 12px 50px 15px rgba(0,0,0,0.69);
+        margin-right: -405px;
+        margin-left: 2%;
+        transform: perspective( 1000px ) rotateY(45deg) scale(.7);
+        -webkit-transform:perspective( 1000px ) rotateY(45deg) scale(.7);
+        transition:all 400ms ease-in-out;
+
+    }
+
+    .portEx:hover{
+        -webkit-transform:perspective( 1000px ) rotateY(0deg) scale(1);
+        transform: perspective( 1000px ) rotateY(0deg) scale(1);
+        position: relative;
+        z-index: 5;
+        -webkit-box-shadow: 0px 51px 81px 24px rgba(0,0,0,0.69);
+        -moz-box-shadow: 0px 51px 81px 24px rgba(0,0,0,0.69);
+        box-shadow: 0px 51px 81px 24px rgba(0,0,0,0.69);
+        transition:all 500ms ease-in-out;
+    }
+
+    .portEx img{
+        height:100%;
+        width: 100%;
+    }
+
+
+    .right{
+        float: right;
+    }
+
+@media (min-width: 700px) and (max-width: 850px) {
+    .portEx{
+        width: 550px;
+        height: 400px;
+        margin-right: -355px;
+        margin-left: 2%;   
+    }
     
-
-.left{
-    float: left;
-    width: 50%;
+    
 }
 
-.menu {
-    list-style: none;
-    float: right;
-    padding-left: 15px;
-    z-index: 3;
-    font-family: "AR Christy";
-    font-size: 25px;
-    color: #c0a892;
-    margin-right: 75px;
-    transition: color .5s ease;
+@media (min-width: 500px) and (max-width: 700px) {
+    .portEx {
+        width: 450px;
+        height: 300px;
+        margin-right: -305px;
+        margin-left: 2%;
+    }
+    
 }
 
-p{
-    color: #50585B;
-    font-family: 'Dancing Script', cursive;
-    font-size: 35px;
+@media (max-width: 500px){
+    .portEx{
+       display:block;
+        transform: none;
+        height: 250px;
+        width: 400px;
+        margin:10px auto;
+    }
+    
+    .portEx:hover{
+        transform: none;
+        -webkit-box-shadow: -2px 12px 50px 15px rgba(0,0,0,0.69);
+        -moz-box-shadow: -2px 12px 50px 15px rgba(0,0,0,0.69);
+        box-shadow: -2px 12px 50px 15px rgba(0,0,0,0.69);
+        z-index: 0;
+    }
+    
+    
 }
-
-.portEx {
-    display: inline-block;
-    height: 450px;
-    width: 675px;
-    position: relative;
-    -webkit-box-shadow: -2px 12px 50px 15px rgba(0,0,0,0.69);
-    -moz-box-shadow: -2px 12px 50px 15px rgba(0,0,0,0.69);
-    box-shadow: -2px 12px 50px 15px rgba(0,0,0,0.69);
-    margin-right: -405px;
-    margin-left: 2%;
-    transform: perspective( 1000px ) rotateY(45deg) scale(.7);
-    -webkit-transform:perspective( 1000px ) rotateY(45deg) scale(.7);
-    transition:all 400ms ease-in-out;
-
-}
-
-.portEx:hover{
-    -webkit-transform:perspective( 1000px ) rotateY(0deg) scale(1);
-    transform: perspective( 1000px ) rotateY(0deg) scale(1);
-    transition:all 500ms ease-in-out;
-    position: relative;
-    z-index: 5;
-    -webkit-box-shadow: 0px 51px 81px 24px rgba(0,0,0,0.69);
-    -moz-box-shadow: 0px 51px 81px 24px rgba(0,0,0,0.69);
-    box-shadow: 0px 51px 81px 24px rgba(0,0,0,0.69);
-}
-
-.portEx img{
-    height:100%;
-    width: 100%;
-}
-
-
-.right{
-    float: right;
-    width: 60%;
-}
-
-
 
 /*animations!*/
 .fadeAnimate { 
