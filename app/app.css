@@ -1,5 +1,6 @@
 /* app css stylesheet */
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:600);
 @font-face{
     font-family: 'AR Christy';
     src: url('/fonts/ARCHRISTY.ttf');/*IE 9 */
@@ -30,10 +31,22 @@
         transition: color .5s ease; 
     }
 
+    p{
+        color: #c0a892;
+        font-family: 'Josefin Slab', serif;
+        font-size: 20px;
+        
+    }
+
     .contact{
         height: 250px; 
         width: 500px;
         margin:0 auto;
+    }
+
+    .content{
+        margin: 0 auto;
+        width: 60%;
     }
 
     h1{
@@ -71,13 +84,13 @@
 
     .homeImgContainer{
         transition: all 500ms;
+        width:450px;
+        margin:30px auto;
     }
 
     .homeImgContainer:hover {
         transform: scale(1.1);
-        margin: 15px;
         transition: all 500ms;
-
     }
 
     .homeImgContainer img:hover{
@@ -100,7 +113,7 @@
         transition: color .5s ease;
     }
 
-    p{
+    #dancingScript{
         color: #50585B;
         font-family: 'Dancing Script', cursive;
         font-size: 35px;
@@ -146,6 +159,13 @@
 
     .right{
         float: right;
+    }
+
+    .skillImg{
+        height: 50px;
+        margin: 10px;
+        display: inline-block;
+        
     }
 
 @media (min-width: 700px) and (max-width: 850px) {
