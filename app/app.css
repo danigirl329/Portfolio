@@ -20,6 +20,7 @@
     .active{
         text-decoration: none;
         color: #564149;
+        text-shadow: 1px 1px 1px #82627A;
     }
 
     a{
@@ -129,7 +130,6 @@
     }
 
     #portExContainer{
-        width: 80%;
         margin:0 auto;
     }
 
@@ -177,33 +177,18 @@
         
     }
 
-@media (min-width: 700px) and (max-width: 850px) {
-    .portEx{
-        width: 550px;
-        height: 400px;
-        margin-right: -355px;
-        margin-left: 2%;   
-    }
-    
-    
-}
-
-@media (min-width: 500px) and (max-width: 700px) {
-    .portEx {
-        width: 450px;
-        height: 300px;
-        margin-right: -305px;
-        margin-left: 2%;
-    }
-    
-}
-
-@media (max-width: 500px){
-    .portEx{
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      
+  .portEx{
        display:block;
         transform: none;
-        height: 250px;
-        width: 400px;
+        height: 350px;
+        width: 500px;
         margin:10px auto;
     }
     
@@ -214,6 +199,87 @@
         box-shadow: -2px 12px 50px 15px rgba(0,0,0,0.69);
         z-index: 0;
     }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  .portEx{
+       display:inline-block;
+        transform: none;
+        height: 350px;
+        width: 500px;
+        margin:10px auto;
+      -webkit-box-shadow: none;
+        -moz-box-shadow:none;
+        box-shadow: none;
+    }
+    
+    .portEx:hover{
+        transform: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow:none;
+        box-shadow: none;
+        z-index: 0;
+    }  
+      
+
+}
+
+
+
+@media (min-width: 700px) and (max-width: 950px) {
+    #portExContainer{
+        width: 50%;   
+    }
+  .portEx{
+       display:inline-block;
+        transform: none;
+        height: 350px;
+        width: 500px;
+        margin:10px auto;
+      -webkit-box-shadow: none;
+        -moz-box-shadow:none;
+        box-shadow: none;
+    }
+    
+    .portEx:hover{
+        transform: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow:none;
+        box-shadow: none;
+        z-index: 0;
+    }  
+     
+    
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+    #portExContainer{
+        width: 50%;   
+    }
+  .portEx{
+       display:inline-block;
+        transform: none;
+        height: 250px;
+        width: 350px;
+        margin:10px auto;
+      -webkit-box-shadow: none;
+        -moz-box-shadow:none;
+        box-shadow: none;
+    }
+    
+    .portEx:hover{
+        transform: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow:none;
+        box-shadow: none;
+        z-index: 0;
+    } 
     
     
 }
