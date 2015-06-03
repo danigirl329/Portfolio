@@ -17,7 +17,12 @@
         height: 100%;
     }
 
-    a, a:visited{
+    .active{
+        text-decoration: none;
+        color: #564149;
+    }
+
+    a{
         font-style: none;
         text-decoration: none;
         color: #c0a892;
@@ -30,6 +35,7 @@
         cursor: pointer;
         transition: color .5s ease; 
     }
+    
 
     p{
         color: #c0a892;
@@ -65,13 +71,15 @@
 
     .header{
         padding:0.8em;
-
+        margin: 20px;
     }
 
     .headerBK{
         width: 100%;
         height: 35px;
         background-color: #50585B;
+        position: fixed;
+        top: 0;
     }
 
     .hLine{
@@ -103,7 +111,7 @@
 
     .menu {
         list-style: none;
-        float: right;
+        display: inline-block;
         padding-left: 15px;
         z-index: 3;
         font-family: "AR Christy";
@@ -111,6 +119,7 @@
         color: #c0a892;
         margin-right: 75px;
         transition: color .5s ease;
+        
     }
 
     #dancingScript{
