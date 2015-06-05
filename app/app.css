@@ -28,6 +28,7 @@
         text-decoration: none;
         color: #c0a892;
         transition: color .5s ease; 
+        -webkit-transition: color .5s ease; 
     }
 
     a:active, a:hover {
@@ -35,6 +36,7 @@
         color: #564149;
         cursor: pointer;
         transition: color .5s ease; 
+        -webkit-transition: color .5s ease; 
     }
     
 
@@ -94,13 +96,16 @@
 
     .homeImgContainer{
         transition: all 500ms;
+        -webkit-transition: all 500ms;
         width:450px;
         margin:30px auto;
     }
 
     .homeImgContainer:hover {
         transform: scale(1.1);
+        -webkit-transform: scale(1.1);
         transition: all 500ms;
+        -webkit-transition: all 500ms;
     }
 
     .homeImgContainer img:hover{
@@ -120,6 +125,7 @@
         color: #c0a892;
         margin-right: 75px;
         transition: color .5s ease;
+        -webkit-transition: color .5s ease;
         
     }
 
@@ -131,6 +137,7 @@
 
     #portExContainer{
         margin:0 auto;
+        width: 80%;
     }
 
     .portEx {
@@ -146,6 +153,7 @@
         transform: perspective( 1000px ) rotateY(45deg) scale(.7);
         -webkit-transform:perspective( 1000px ) rotateY(45deg) scale(.7);
         transition:all 400ms ease-in-out;
+        -webkit-transition:all 400ms ease-in-out;
 
     }
 
@@ -158,6 +166,7 @@
         -moz-box-shadow: 0px 51px 81px 24px rgba(0,0,0,0.69);
         box-shadow: 0px 51px 81px 24px rgba(0,0,0,0.69);
         transition:all 500ms ease-in-out;
+        -webkit-transition:all 500ms ease-in-out;
     }
 
     .portEx img{
@@ -183,6 +192,7 @@
 .fadeAnimate { 
     opacity:0; 
     transition:all 1000ms ease-in-out; 
+    -webkit-transition:all 1000ms ease-in-out; 
 }
 
 .fadeAnimate.fade-in { 
@@ -193,6 +203,7 @@
 .glowAnimate {
     text-shadow: 0 0 3px #FFFFF0;
     transition:all 3000ms ease-in-out; 
+    -webkit-transition:all 3000ms ease-in-out; 
 }
 .glowAnimate.fade-in {
     text-shadow: none;   
