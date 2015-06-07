@@ -11,6 +11,7 @@
         url('/fonts/ARCHRISTY.ttf') format('svg'); /* Legacy iOS */
 }
 
+
     body{
         background-color: #fff;
         width:100%;
@@ -166,6 +167,182 @@
         display: inline-block;
         
     }
+=======
+body{
+    background-color: #192228;
+    width:100%;
+    height: 100%;
+}
+
+.active{
+    text-decoration: none;
+    color: #564149;
+    text-shadow: 1px 1px 1px #82627A;
+}
+
+a{
+    font-style: none;
+    text-decoration: none;
+    color: #c0a892;
+    transition: color .5s ease; 
+    -webkit-transition: color .5s ease; 
+}
+
+a:active, a:hover {
+    text-decoration: none;
+    color: #564149;
+    cursor: pointer;
+    transition: color .5s ease; 
+    -webkit-transition: color .5s ease; 
+}
+
+
+p{
+    color: #c0a892;
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+
+}
+
+.contact{
+    height: 250px; 
+    width: 500px;
+    margin:0 auto;
+}
+
+.content{
+    margin: 0 auto;
+    width: 60%;
+}
+
+h1{
+    color: #564149;
+    font-family: "AR Christy";
+    font-size: 50px;
+}
+
+h3{
+    color: #c0a892;
+    font-family: "AR Julian";
+    font-size: 20px;
+    margin-top: -20px;  
+    margin-left: 25px;
+}
+
+.header{
+    padding:0.8em;
+    margin: 20px;
+}
+
+.headerBK{
+    width: 100%;
+    height: 35px;
+    background-color: #50585B;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+}
+
+.hLine{
+    height: 5px;
+    width: 100%;
+    background-color: #50585B;
+    margin-top: 10px;
+
+}
+
+.homeImgContainer{
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+    width:450px;
+    margin:30px auto;
+}
+
+.homeImgContainer:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+}
+
+.homeImgContainer img:hover{
+}
+
+
+.left{
+    float: left;
+}
+
+.menu {
+    list-style: none;
+    display: inline-block;
+    padding-left: 15px;        
+    font-family: "AR Christy";
+    font-size: 25px;
+    color: #c0a892;
+    margin-right: 75px;
+    transition: color .5s ease;
+    -webkit-transition: color .5s ease;
+
+}
+
+.dancingScript{
+    color: #50585B;
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+}
+
+#portExContainer{
+    margin:0 auto;
+    width: 80%;
+}
+
+.portEx {
+    display: inline-block;
+    height: 450px;
+    width: 675px;
+    position: relative;
+    -webkit-box-shadow: -2px 12px 50px 15px rgba(0,0,0,0.69);
+    -moz-box-shadow: -2px 12px 50px 15px rgba(0,0,0,0.69);
+    box-shadow: -2px 12px 50px 15px rgba(0,0,0,0.69);
+    margin-right: -405px;
+    margin-left: 2%;
+    transform: perspective( 1000px ) rotateY(45deg) scale(.7);
+    -webkit-transform:perspective( 1000px ) rotateY(45deg) scale(.7);
+    transition:all 400ms ease-in-out;
+    -webkit-transition:all 400ms ease-in-out;
+
+}
+
+.portEx:hover{
+    -webkit-transform:perspective( 1000px ) rotateY(0deg) scale(1);
+    transform: perspective( 1000px ) rotateY(0deg) scale(1);
+    position: relative;
+    z-index: 5;
+    -webkit-box-shadow: 0px 51px 81px 24px rgba(0,0,0,0.69);
+    -moz-box-shadow: 0px 51px 81px 24px rgba(0,0,0,0.69);
+    box-shadow: 0px 51px 81px 24px rgba(0,0,0,0.69);
+    transition:all 500ms ease-in-out;
+    -webkit-transition:all 500ms ease-in-out;
+}
+
+.portEx img{
+    height:100%;
+    width: 100%;
+}
+
+
+.right{
+    float: right;
+}
+
+.skillImg{
+    height: 50px;
+    margin: 10px;
+    display: inline-block;
+
+}
+>>>>>>> origin/master:app/app.css
 
 
 
@@ -173,6 +350,7 @@
 .fadeAnimate { 
     opacity:0; 
     transition:all 1000ms ease-in-out; 
+    -webkit-transition:all 1000ms ease-in-out; 
 }
 
 .fadeAnimate.fade-in { 
@@ -183,6 +361,7 @@
 .glowAnimate {
     text-shadow: 0 0 3px #FFFFF0;
     transition:all 3000ms ease-in-out; 
+    -webkit-transition:all 3000ms ease-in-out; 
 }
 .glowAnimate.fade-in {
     text-shadow: none;   
