@@ -12,15 +12,14 @@
 }
 
     body{
-        background-color: #192228;
+        background-color: #fff;
         width:100%;
         height: 100%;
     }
 
     .active{
         text-decoration: none;
-        color: #564149;
-        text-shadow: 1px 1px 1px #82627A;
+        color: #A89380;
     }
 
     a{
@@ -32,14 +31,13 @@
 
     a:active, a:hover {
         text-decoration: none;
-        color: #564149;
+        color: #A89380;
         cursor: pointer;
         transition: color .5s ease; 
     }
     
 
     p{
-        color: #c0a892;
         font-family: 'Josefin Slab', serif;
         font-size: 20px;
         
@@ -57,13 +55,12 @@
     }
 
     h1{
-        color: #564149;
-        font-family: "AR Christy";
+        font-family: "Dancing Script";
         font-size: 50px;
+        color: #50585B;
     }
 
     h3{
-        color: #c0a892;
         font-family: "AR Julian";
         font-size: 20px;
         margin-top: -20px;  
@@ -78,19 +75,12 @@
     .headerBK{
         width: 100%;
         height: 35px;
-        background-color: #50585B;
+        background-color: #564149;
         position: fixed;
         top: 0;
         z-index: 20;
     }
 
-    .hLine{
-        height: 5px;
-        width: 100%;
-        background-color: #50585B;
-        margin-top: 10px;
-
-    }
 
     .homeImgContainer{
         transition: all 500ms;
@@ -115,7 +105,7 @@
         list-style: none;
         display: inline-block;
         padding-left: 15px;        
-        font-family: "AR Christy";
+        font-family: "Dancing Script";
         font-size: 25px;
         color: #c0a892;
         margin-right: 75px;
