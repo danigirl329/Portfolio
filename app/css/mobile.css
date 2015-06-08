@@ -50,17 +50,41 @@
             -moz-box-shadow:none;
             box-shadow: none;
             z-index: 0;
-        }  
+        }
+
+        .footContent.right{
+            float: none;
+        }
+        .footContent.left{
+            float: none;
+        }
+        .footContent{
+            margin:0 auto;
+        }
 
 
     }
 
-@media (min-width: 949px) and (max-width: 1450px){
+@media (min-width: 949px) and (max-width: 1250px){
     #portExContainer{
         margin:0;
         width: 100%;
     }
-
+    .footer{
+        height: 350px;
+    }
+    .footContent{
+        height: 155px;
+    }
+    .footContent.right{
+        float: none;
+    }
+    .footContent.left{
+        float: none;
+    }
+    .footContent{
+        margin:0 auto;
+    }
 
 }
 
@@ -69,11 +93,38 @@
     .menu{
         margin-right: 35px;
     }
-    
+
+
+    .contact{
+        width:80%;
+        height: auto;
+    }
+
+    .content{
+        width: 80%;   
+    }
+
+    .content img{
+        height: 35px;
+    }
+
     .dancingScript{
         font-size:25px;
     }
-    
+
+    .footer{
+        height: 350px;
+    }
+
+    .footContent{
+        margin: 15px; 
+        width: 100%;
+    }
+
+    .footContent span{
+        display: none;
+    }
+
 
     .header{
         margin: 50px 0 0 0;
@@ -89,19 +140,9 @@
         height: 250px;
     }
 
-    .contact{
-        width:80%;
-        height: auto;
+    .icon{
+        display: inline-block;
     }
-
-    .content{
-        width: 80%;   
-    }
-
-    .content img{
-        height: 35px;
-    }
-
 
     .portEx{
         display:inline-block;
@@ -115,6 +156,12 @@
         box-shadow: none;
     }
 
+    .footContent.right{
+        float: none;
+    }
+    .footContent.left{
+        float: none;
+    }
 
 
 }
@@ -136,6 +183,14 @@
         box-shadow: none;
     }
 
+    .footer{
+        height: 350px;
+    }
+
+    .footContent{
+        margin: 15px;   
+    }
+
 
 
 }
@@ -154,6 +209,14 @@
         -webkit-box-shadow: none;
         -moz-box-shadow:none;
         box-shadow: none;
+    }
+
+    .footer{
+        height: 350px;
+    }
+
+    .footContent{
+        margin: 15px;   
     }
 
 

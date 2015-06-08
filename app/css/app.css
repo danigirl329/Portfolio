@@ -12,172 +12,15 @@
 }
 
 
-    body{
-        background-color: #fff;
-        width:100%;
-        height: 100%;
-    }
-
-    .active{
-        text-decoration: none;
-        color: #A89380;
-    }
-
-    a{
-        font-style: none;
-        text-decoration: none;
-        color: #c0a892;
-        transition: color .5s ease; 
-    }
-
-    a:active, a:hover {
-        text-decoration: none;
-        color: #A89380;
-        cursor: pointer;
-        transition: color .5s ease; 
-    }
-    
-
-    p{
-        font-family: 'Josefin Slab', serif;
-        font-size: 20px;
-        
-    }
-
-    .contact{
-        height: 250px; 
-        width: 500px;
-        margin:0 auto;
-    }
-
-    .content{
-        margin: 0 auto;
-        width: 60%;
-    }
-
-    h1{
-        font-family: "Dancing Script";
-        font-size: 50px;
-        color: #50585B;
-    }
-
-    h3{
-        font-family: "AR Julian";
-        font-size: 20px;
-        margin-top: -20px;  
-        margin-left: 25px;
-    }
-
-    .header{
-        padding:0.8em;
-        margin: 20px;
-    }
-
-    .headerBK{
-        width: 100%;
-        height: 35px;
-        background-color: #564149;
-        position: fixed;
-        top: 0;
-        z-index: 20;
-    }
-
-
-    .homeImgContainer{
-        transition: all 500ms;
-        width:450px;
-        margin:30px auto;
-    }
-
-    .homeImgContainer:hover {
-        transform: scale(1.1);
-        transition: all 500ms;
-    }
-
-    .homeImgContainer img:hover{
-    }
-
-
-    .left{
-        float: left;
-    }
-
-    .menu {
-        list-style: none;
-        display: inline-block;
-        padding-left: 15px;        
-        font-family: "Dancing Script";
-        font-size: 25px;
-        color: #c0a892;
-        margin-right: 75px;
-        transition: color .5s ease;
-        
-    }
-
-    #dancingScript{
-        color: #50585B;
-        font-family: 'Dancing Script', cursive;
-        font-size: 35px;
-    }
-
-    #portExContainer{
-        margin:0 auto;
-    }
-
-    .portEx {
-        display: inline-block;
-        height: 450px;
-        width: 675px;
-        position: relative;
-        -webkit-box-shadow: -2px 12px 50px 15px rgba(0,0,0,0.69);
-        -moz-box-shadow: -2px 12px 50px 15px rgba(0,0,0,0.69);
-        box-shadow: -2px 12px 50px 15px rgba(0,0,0,0.69);
-        margin-right: -405px;
-        margin-left: 2%;
-        transform: perspective( 1000px ) rotateY(45deg) scale(.7);
-        -webkit-transform:perspective( 1000px ) rotateY(45deg) scale(.7);
-        transition:all 400ms ease-in-out;
-
-    }
-
-    .portEx:hover{
-        -webkit-transform:perspective( 1000px ) rotateY(0deg) scale(1);
-        transform: perspective( 1000px ) rotateY(0deg) scale(1);
-        position: relative;
-        z-index: 5;
-        -webkit-box-shadow: 0px 51px 81px 24px rgba(0,0,0,0.69);
-        -moz-box-shadow: 0px 51px 81px 24px rgba(0,0,0,0.69);
-        box-shadow: 0px 51px 81px 24px rgba(0,0,0,0.69);
-        transition:all 500ms ease-in-out;
-    }
-
-    .portEx img{
-        height:100%;
-        width: 100%;
-    }
-
-
-    .right{
-        float: right;
-    }
-
-    .skillImg{
-        height: 50px;
-        margin: 10px;
-        display: inline-block;
-        
-    }
-=======
 body{
-    background-color: #192228;
+    background-color: #fff;
     width:100%;
     height: 100%;
 }
 
 .active{
     text-decoration: none;
-    color: #564149;
-    text-shadow: 1px 1px 1px #82627A;
+    color: #A89380;
 }
 
 a{
@@ -185,23 +28,25 @@ a{
     text-decoration: none;
     color: #c0a892;
     transition: color .5s ease; 
-    -webkit-transition: color .5s ease; 
 }
 
-a:active, a:hover {
+a:active, a:hover, a:visited {
     text-decoration: none;
-    color: #564149;
+    color: #A89380;
     cursor: pointer;
     transition: color .5s ease; 
-    -webkit-transition: color .5s ease; 
 }
 
 
 p{
-    color: #c0a892;
     font-family: 'Josefin Slab', serif;
     font-size: 20px;
+    padding:0 15px;
 
+}
+
+.light{
+    color:#c0a892;   
 }
 
 .contact{
@@ -215,14 +60,28 @@ p{
     width: 60%;
 }
 
+.footer{
+    height: 200px;
+    width: 100%;
+    background-color: #564149;
+    margin-top:55px;
+    padding: 15px;
+
+
+}
+
+.footContent{
+    width: 600px;
+}
+
+
 h1{
-    color: #564149;
-    font-family: "AR Christy";
+    font-family: "Dancing Script";
     font-size: 50px;
+    color: #50585B;
 }
 
 h3{
-    color: #c0a892;
     font-family: "AR Julian";
     font-size: 20px;
     margin-top: -20px;  
@@ -237,32 +96,22 @@ h3{
 .headerBK{
     width: 100%;
     height: 35px;
-    background-color: #50585B;
+    background-color: #564149;
     position: fixed;
     top: 0;
     z-index: 20;
 }
 
-.hLine{
-    height: 5px;
-    width: 100%;
-    background-color: #50585B;
-    margin-top: 10px;
-
-}
 
 .homeImgContainer{
     transition: all 500ms;
-    -webkit-transition: all 500ms;
     width:450px;
     margin:30px auto;
 }
 
 .homeImgContainer:hover {
     transform: scale(1.1);
-    -webkit-transform: scale(1.1);
     transition: all 500ms;
-    -webkit-transition: all 500ms;
 }
 
 .homeImgContainer img:hover{
@@ -277,12 +126,11 @@ h3{
     list-style: none;
     display: inline-block;
     padding-left: 15px;        
-    font-family: "AR Christy";
+    font-family: "Dancing Script";
     font-size: 25px;
     color: #c0a892;
     margin-right: 75px;
     transition: color .5s ease;
-    -webkit-transition: color .5s ease;
 
 }
 
@@ -294,7 +142,6 @@ h3{
 
 #portExContainer{
     margin:0 auto;
-    width: 80%;
 }
 
 .portEx {
@@ -310,7 +157,6 @@ h3{
     transform: perspective( 1000px ) rotateY(45deg) scale(.7);
     -webkit-transform:perspective( 1000px ) rotateY(45deg) scale(.7);
     transition:all 400ms ease-in-out;
-    -webkit-transition:all 400ms ease-in-out;
 
 }
 
@@ -323,7 +169,6 @@ h3{
     -moz-box-shadow: 0px 51px 81px 24px rgba(0,0,0,0.69);
     box-shadow: 0px 51px 81px 24px rgba(0,0,0,0.69);
     transition:all 500ms ease-in-out;
-    -webkit-transition:all 500ms ease-in-out;
 }
 
 .portEx img{
@@ -342,7 +187,7 @@ h3{
     display: inline-block;
 
 }
->>>>>>> origin/master:app/app.css
+
 
 
 
@@ -366,3 +211,40 @@ h3{
 .glowAnimate.fade-in {
     text-shadow: none;   
 }
+
+
+/*icon sprite*/
+
+
+.icon{
+    height: 50px;
+    width: 50px;
+    background-image: url(/images/icons.png);
+    display: inline-block;
+    margin:0 15px;
+    vertical-align: middle;
+}
+
+.linkedin{
+    background-position: 11.11% 50%;
+}
+
+.twitter{
+    background-position: 0 100%;
+
+}
+
+.gplus{
+    background-position: 55.55% 25%;
+
+}
+
+.mail{
+    background-position: 22.22% 50%;
+
+}
+
+.github{
+    background-position: 77.77% 25%;   
+}
+
