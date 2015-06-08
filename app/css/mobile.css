@@ -71,19 +71,7 @@
         width: 100%;
     }
     .footer{
-        height: 370px;
-    }
-    .wrapper{
-        min-height: 100%;
-        margin-bottom: -300px;
-    }
-
-    .wrapper:after{
-        content: "";
-        display: block;
-    }
-
-    .footer, .wrapper:after{
+        padding-top:25px;
         height: 370px;
     }
 
@@ -127,20 +115,12 @@
     }
 
     .footer{
+        padding-top:25px;
         height: 370px;
     }
     .wrapper{
         min-height: 100%;
-        margin-bottom: -300px;
-    }
-
-    .wrapper:after{
-        content: "";
-        display: block;
-    }
-
-    .footer, .wrapper:after{
-        height: 370px;
+        margin-bottom: -370px;
     }
 
     .footContent{
@@ -209,26 +189,25 @@
         -moz-box-shadow:none;
         box-shadow: none;
     }
-
+    
+    .footer, .push{
+    height: 350px;
+    }
+    
     .footer{
-        height: 370px;
+        padding-top: 25px;
     }
     .wrapper{
-        min-height: 100%;
-        margin-bottom: -300px;
+        margin: 0 auto -350px;   
     }
-
-    .wrapper:after{
-        content: "";
-        display: block;
-    }
-
-    .footer, .wrapper:after{
-        height: 370px;
-    }
-
     .footContent{
-        margin: 15px;   
+        margin: 50px auto;   
+    }
+    .footContent.right{
+        float: none;
+    }
+    .footContent.left{
+        float: none;
     }
 
 
@@ -255,19 +234,7 @@
         height: 370px;
     }
 
-    .wrapper{
-        min-height: 100%;
-        margin-bottom: -300px;
-    }
-
-    .wrapper:after{
-        content: "";
-        display: block;
-    }
-
-    .footer, .wrapper:after{
-        height: 370px;
-    }
+    
     .footContent{
         margin: 15px;   
     }
