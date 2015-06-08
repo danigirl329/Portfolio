@@ -91,87 +91,7 @@
 }
 
 
-@media (min-width: 300px) and (max-width: 650px){
-    .menu{
-        margin-right: 35px;
-    }
 
-
-    .contact{
-        width:80%;
-        height: auto;
-    }
-
-    .content{
-        width: 80%;   
-    }
-
-    .content img{
-        height: 35px;
-    }
-
-    .dancingScript{
-        font-size:25px;
-    }
-
-    .footer{
-        padding-top:25px;
-        height: 370px;
-    }
-    .wrapper{
-        min-height: 100%;
-        margin-bottom: -370px;
-    }
-
-    .footContent{
-        margin: 15px; 
-        width: 100%;
-    }
-
-    .footContent span{
-        display: none;
-    }
-
-
-    .header{
-        margin: 50px 0 0 0;
-        padding:1px;
-    }
-
-    .homeImgContainer{
-        width: 90%;   
-    }
-
-    .homeImgContainer img{
-        width: 300px; 
-        height: 250px;
-    }
-
-    .icon{
-        display: inline-block;
-    }
-
-    .portEx{
-        display:inline-block;
-        transform: none;
-        -webkit-transform: none;
-        height: 245px;
-        width: 350px;
-        margin:10px auto;
-        -webkit-box-shadow: none;
-        -moz-box-shadow:none;
-        box-shadow: none;
-    }
-
-    .footContent.right{
-        float: none;
-    }
-    .footContent.left{
-        float: none;
-    }
-
-
-}
 
 
 @media (min-width: 700px) and (max-width: 950px) {
@@ -191,7 +111,7 @@
     }
     
     .footer, .push{
-    height: 350px;
+    height: 450px;
     }
     
     .footer{
@@ -241,4 +161,174 @@
 
 
 }
+
+@media (min-width: 350px) and (max-width: 440px){
+    .menu{
+        margin-right: 35px;
+    }
+
+    .contact{
+        width:80%;
+        height: auto;
+    }
+
+    .content{
+        width: 80%;   
+    }
+
+    .content img{
+        height: 35px;
+    }
+
+    .dancingScript{
+        font-size:25px;
+    }
+
+    .footer, .push{
+        height: 300px;
+    }
+    .wrapper{
+        min-height: 100%;
+        margin-bottom: -300px;
+    }
+
+    .footContent{
+        margin: 15px; 
+        width: 85%;
+    }
+
+    .footContent span{
+        display: none;
+    }
+
+
+    .header{
+        margin: 50px 0 0 0;
+        padding:1px;
+    }
+
+    .homeImgContainer{
+        width: 90%; 
+        height: 300px;
+    }
+
+    .homeImgContainer img{
+        width: 300px; 
+        height: 250px;
+    }
+
+    .icon{
+        display: inline-block;
+    }
+
+    .portEx{
+        display:block;
+        transform: none;
+        -webkit-transform: none;
+        height: 205px;
+        width: 320px;
+        margin:10px auto;
+        -webkit-box-shadow: none;
+        -moz-box-shadow:none;
+        box-shadow: none;
+    }
+    
+    #portExContainer {
+        width: 90%;
+    }
+
+    .footContent.right{
+        float: none;
+    }
+    .footContent.left{
+        float: none;
+    }
+
+
+}
+
+@media (max-width: 350px){
+    
+    #profPic{
+        display: none;
+    }
+
+    .contact{
+        width:80%;
+        height: auto;
+    }
+
+    .content{
+        width: 80%;   
+    }
+
+    .content img{
+        height: 35px;
+    }
+
+    .dancingScript{
+        font-size:25px;
+    }
+
+    .footer, .push{
+        height: 300px;
+    }
+    .wrapper{
+        min-height: 100%;
+        margin-bottom: -300px;
+    }
+
+    .footContent{
+        margin: 15px; 
+        width: 100%;
+    }
+
+    .footContent span{
+        display: none;
+    }
+
+
+    .header{
+        margin: 50px 0 0 0;
+        padding:1px;
+    }
+
+    .homeImgContainer{
+        width: 80%; 
+        height: 300px;
+    }
+
+    .homeImgContainer img{
+        width: 250px; 
+        height: 170px;
+    }
+
+    .icon{
+        display: inline-block;
+    }
+
+    .portEx{
+        display:inline-block;
+        transform: none;
+        -webkit-transform: none;
+        height: 245px;
+        width: 320px;
+        margin:10px auto;
+        -webkit-box-shadow: none;
+        -moz-box-shadow:none;
+        box-shadow: none;
+    }
+    
+    #portExContainer{
+        width:60%;
+        margin:0;
+    }
+
+    .footContent.right{
+        float: none;
+    }
+    .footContent.left{
+        float: none;
+    }
+       
 }

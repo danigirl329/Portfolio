@@ -1,37 +1,29 @@
 /* app css stylesheet */
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script);
 @import url(http://fonts.googleapis.com/css?family=Josefin+Slab:600);
-@font-face{
-    font-family: 'AR Christy';
-    src: url('/fonts/ARCHRISTY.ttf');/*IE 9 */
-    src: url('/fonts/ARCHRISTY.ttf') format('embedded-opentype'), /* IE6-IE8 */
-        url('/fonts/ARCHRISTY.ttf') format('woff2'), /* Super Modern Browsers */
-        url('/fonts/ARCHRISTY.ttf') format('woff'), /* Pretty Modern Browsers */
-        url('/fonts/ARCHRISTY.ttf')  format('truetype'), /* Safari, Android, iOS */
-        url('/fonts/ARCHRISTY.ttf') format('svg'); /* Legacy iOS */
-}
 
 * {
 	margin: 0;
 }
 
-html, body, .ng-scope{
+html, body{
     height: 100%;
 }
 
 .wrapper{
     min-height: 100%;
-	margin: 0 auto -200px;
 }
 
 .footer, .push{
-    height: 200px;
+    height: 250px;
+    
 }
 
-.footer{
+.footer {
     background-color: #564149;
     width: 100%;
     padding-top: 50px;
+    
 }
 
 .footContent{
@@ -150,6 +142,7 @@ h3{
 
 #portExContainer{
     margin:0 auto;
+    width: 1050px;
 }
 
 .portEx {
